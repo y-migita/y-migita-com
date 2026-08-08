@@ -2,15 +2,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Runtime versions are managed with [mise](https://mise.jdx.dev). Install them first:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+mise install
+```
+
+Install dependencies and run the development server:
+
+```bash
+bun install
 bun dev
 ```
 
@@ -19,6 +20,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `bun dev` | Start the development server |
+| `bun run build` | Build for production |
+| `bun start` | Start the production server |
+| `bun run lint` | Lint and check formatting with Biome |
+| `bun run format` | Format the code with Biome |
 
 ## Learn More
 
